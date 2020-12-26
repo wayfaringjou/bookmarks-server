@@ -19,8 +19,9 @@ app.use(helmet());
 app.use(cors());
 
 app.use(validateBearerToken);
-app.use(errorHandler);
 
 app.use(bookmarkRouter);
+
+app.use(errorHandler);
 
 module.exports = app;
